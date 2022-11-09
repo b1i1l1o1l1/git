@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: -webkit-grab;
+}
+
+.box {
+    background-color: white;
+    width: 100px;
+    border-radius: 50%;
+    animation: myanime 1.5s infinite;
+    aspect-ratio: 1/1;
+    animation-delay: 1s;
+}
+
+@keyframes myanime {
+    0% {
+        transform: scale(0);
+    }
+
+    10% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.box:nth-child(2) {
+    animation-delay: 1.2s;
+}
+
+.box:nth-child(3) {
+    animation-delay: 1.4s;
+}
